@@ -25,13 +25,11 @@ namespace AppBindingCommands
         protected override void OnSleep()
         {
             Application.Current.Properties["AcaoSleep"] = string.Format(" * App em segundo plano às {0}. \n", DateTime.Now);
-
         }
 
         protected override void OnResume()
         {
             Application.Current.Properties["AcaoResume"] = string.Format(" * App reativado às {0}. \n", DateTime.Now);
-
         }
     }
 }

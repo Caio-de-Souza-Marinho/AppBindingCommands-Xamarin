@@ -14,5 +14,24 @@ namespace AppBindingCommands
         {
             InitializeComponent();
         }
+
+        private void btnAtualizarInfo_Clicked(object sender, EventArgs e)
+        {
+            string informacoes = string.Empty;
+
+            if (Application.Current.Properties.ContainsKey("AcaoInicial"))
+                informacoes += Application.Current.Properties["AcaoInicial"];
+
+            if (Application.Current.Properties.ContainsKey("AcaoStart"))
+                informacoes += Application.Current.Properties["AcaoStart"];
+
+            if (Application.Current.Properties.ContainsKey("AcaoSleep"))
+                informacoes += Application.Current.Properties["AcaoSleep"];
+
+            if (Application.Current.Properties.ContainsKey("AcaoResume"))
+                informacoes += Application.Current.Properties["AcaoResume"];
+
+            lblInformacoes.Text = informacoes;
+        }
     }
 }

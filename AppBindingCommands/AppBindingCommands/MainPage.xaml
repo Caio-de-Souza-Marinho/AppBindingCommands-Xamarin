@@ -19,6 +19,10 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+
+        <Label x:Name="lblInformacoes" />
+        <Button x:Name="btnAtualizarInfo" Text="Atualizar informações" Clicked="btnAtualizarInfo_Clicked"/>
+
     </StackLayout>
 
 </ContentPage>
