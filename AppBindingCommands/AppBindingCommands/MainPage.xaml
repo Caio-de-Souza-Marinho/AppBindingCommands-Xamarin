@@ -23,6 +23,13 @@
         <Label x:Name="lblInformacoes" />
         <Button x:Name="btnAtualizarInfo" Text="Atualizar informações" Clicked="btnAtualizarInfo_Clicked"/>
 
+        <Entry Text="{Binding Name}" Placeholder="Enter Name"/>
+        <Label Text="{Binding DisplayName}"/>
+
+        <Label Text="{Binding DisplayMessage}" HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+        <Button Command="{Binding ShowMessageCommand}" Text="Mensagem"/>
+
     </StackLayout>
 
 </ContentPage>

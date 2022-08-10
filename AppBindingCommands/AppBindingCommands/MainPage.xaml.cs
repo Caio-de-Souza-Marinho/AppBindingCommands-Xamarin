@@ -13,6 +13,8 @@ namespace AppBindingCommands
         public MainPage()
         {
             InitializeComponent();
+
+            BindingContext = new MainPageViewModel();
         }
 
         private void btnAtualizarInfo_Clicked(object sender, EventArgs e)
